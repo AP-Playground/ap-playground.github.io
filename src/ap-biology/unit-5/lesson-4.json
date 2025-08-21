@@ -1,0 +1,110 @@
+{
+  "summary": "Topic 5.3 explained the basis of genetics: patterns of inheritance which followed the findings of Gregor Mendel. Not all forms of inheritance follow the laws the Austrian observed, and Topic 5.4 is dedicated to explaining these Non-Mendelian patterns of inheritance.",
+  "vocab": [
+    {
+      "term": "Complete dominance",
+      "link": "https://en.wikipedia.org/wiki/Dominance_(genetics)#Complete_dominance_(Mendelian)"
+    },
+    {
+      "term": "Incomplete dominance",
+      "link": "https://en.wikipedia.org/wiki/Dominance_(genetics)#Incomplete_dominance_(non-Mendelian)"
+    },
+    {
+      "term": "Codominance",
+      "link": "https://en.wikipedia.org/wiki/Dominance_(genetics)#Co-dominance_(non-Mendelian)"
+    },
+    {
+      "term": "Multiple alleles",
+      "link": "https://en.wikipedia.org/wiki/Allele#Multiple_alleles"
+    },
+    {
+      "term": "Linked genes",
+      "link": "https://en.wikipedia.org/wiki/Genetic_linkage"
+    },
+    {
+      "term": "Linkage map",
+      "link": "https://en.wikipedia.org/wiki/Genetic_linkage#Linkage_map"
+    },
+    {
+      "term": "Parental type",
+      "link": "https://en.wikipedia.org/wiki/Genetic_recombination"
+    },
+    {
+      "term": "Recombinant type",
+      "link": "https://en.wikipedia.org/wiki/Genetic_recombination"
+    },
+    {
+      "term": "Nonnuclear inheritance",
+      "link": "https://en.wikipedia.org/wiki/Mitochondrial_DNA#Mitochondrial_inheritance"
+    },
+    {
+      "term": "Sex-linked gene",
+      "link": "https://en.wikipedia.org/wiki/Sex_linkage"
+    },
+    {
+      "term": "Pedigree",
+      "link": "https://en.wikipedia.org/wiki/Pedigree_chart"
+    }
+  ],
+  "links": [
+    {
+      "title": "Khan Academy | Variations on Mendel's laws (article)",
+      "link": "https://www.khanacademy.org/science/ap-biology/heredity/non-mendelian-genetics/a/variations-on-mendels-laws-overview"
+    },
+    {
+      "title": "Khan Academy | X-linked inheritance (article)",
+      "link": "https://www.khanacademy.org/science/ap-biology/heredity/non-mendelian-genetics/a/sex-linkage-sex-determination-and-x-inactivation"
+    },
+    {
+      "title": "Khan Academy | Genetic linkage & mapping (article)",
+      "link": "https://www.khanacademy.org/science/ap-biology/heredity/non-mendelian-genetics/a/linkage-mapping"
+    },
+    {
+      "title": "Khan Academy | Pedigree for determining probability of exhibiting sex linked recessive trait (video)",
+      "link": "https://www.khanacademy.org/science/ap-biology/heredity/non-mendelian-genetics/v/pedigree-for-determining-probability-of-exhibiting-sex-linked-recessive-trait"
+    },
+    {
+      "title": "Wikipedia | Non-Mendelian inheritance",
+      "link": "https://en.wikipedia.org/wiki/Non-Mendelian_inheritance"
+    },
+    {
+      "title": "Biology Dictionary | Non-Mendelian Genetics",
+      "link": "https://biologydictionary.net/ap-biology/5-4-non-mendelian-genetics/"
+    }
+  ],
+  "videos": [
+    {
+      "title": "AP Playground | Non-Mendelian Genetics",
+      "link": "3QfkZTyrodM",
+      "download": true,
+      "filename": "AP Playground Biology Lesson 5.4.pptx"
+    },
+    {
+      "title": "PoseKnows Biology | Non-Mendelian Genetics",
+      "link": "Mw0uX3i6Kkw"
+    },
+    {
+      "title": "PoseKnows Biology | Non-Mendelian Genetics (Morgan's Experiments and Gene Mapping)",
+      "link": "ofHh06FXF18"
+    },
+    {
+      "title": "Amoeba Sisters | Incomplete Dominance, Codominance, Polygenic Traits, and Epistasis!",
+      "link": "YJHGfbW55l0",
+      "more": true
+    },
+    {
+      "title": "Amoeba Sisters | Punnett Squares and Sex-Linked Traits",
+      "link": "h2xufrHWG3E",
+      "more": true
+    },
+    {
+      "title": "Amoeba Sisters | Pedigrees",
+      "link": "Gd09V2AkZv4",
+      "more": true
+    },
+    {
+      "title": "Bozeman Science | Advanced Genetics",
+      "link": "YoEgUqHOcbc"
+    }
+  ]
+}

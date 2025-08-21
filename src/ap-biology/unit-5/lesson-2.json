@@ -1,0 +1,64 @@
+{
+  "summary": "Topic 5.1 provided an overview of sexual reproduction and the process of meiosis within organisms. But how does sexual reproduction contribute to the diversity of individuals we see within populations? In Topic 5.2, we'll delve into how meiosis contributes to genetic diversity.",
+  "vocab": [
+    {
+      "term": "Meiosis",
+      "link": "https://en.wikipedia.org/wiki/Meiosis"
+    },
+    {
+      "term": "Genotype",
+      "link": "https://en.wikipedia.org/wiki/Genotype"
+    },
+    {
+      "term": "Phenotype",
+      "link": "https://en.wikipedia.org/wiki/Phenotype"
+    },
+    {
+      "term": "Crossing over",
+      "link": "https://en.wikipedia.org/wiki/Chromosomal_crossover"
+    },
+    {
+      "term": "Independent assortment",
+      "link": "https://en.wikipedia.org/wiki/Mendelian_inheritance#Law_of_independent_assortment"
+    },
+    {
+      "term": "Random fertilization",
+      "link": "https://en.wikipedia.org/wiki/Quantitative_genetics#Random_fertilization"
+    }
+  ],
+  "links": [
+    {
+      "title": "Khan Academy | Ligands & receptors (video)",
+      "link": "https://www.khanacademy.org/science/ap-biology/heredity/meiosis-and-genetic-diversity/v/chromosomal-crossover-in-meiosis-i"
+    },
+    {
+      "title": "Wikipedia | Meiosis",
+      "link": "https://en.wikipedia.org/wiki/Meiosis"
+    },
+    {
+      "title": "Biology Dictionary | Meiosis and Genetic Diversity",
+      "link": "https://biologydictionary.net/ap-biology/5-2-meiosis-and-genetic-diversity/"
+    }
+  ],
+  "videos": [
+    {
+      "title": "AP Playground | Meiosis and Genetic Diversity",
+      "link": "bP24P80yIc8",
+      "download": true,
+      "filename": "AP Playground Biology Lesson 5.2.pptx"
+    },
+    {
+      "title": "PoseKnows Biology | Meiosis and Genetic Diversity",
+      "link": "yLTGkbqHJjI"
+    },
+    {
+      "title": "Crash Course Biology | Meiosis: Why Are All Humans Unique?",
+      "link": "pj1oFx42d48"
+    },
+    {
+      "title": "Bozeman Science | Meiosis",
+      "link": "rB_8dTuh73c",
+      "more": true
+    }
+  ]
+}

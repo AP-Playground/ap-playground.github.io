@@ -1,0 +1,151 @@
+{
+  "summary": "Can you imagine that the human body contains around 30 trillion cells, and yet starts as only one? So far in this course we've learned about how the body functions, but now it's time to learn how it's formed. Topic 4.5 goes over the processes that cells use to form and replicate themselves. Please keep note that this is not the same process that organisms use to mate (more on that in unit 5)",
+  "vocab": [
+    {
+      "term": "Cell cycle",
+      "link": "https://en.wikipedia.org/wiki/Cell_cycle"
+    },
+    {
+      "term": "Interphase",
+      "link": "https://en.wikipedia.org/wiki/Interphase"
+    },
+    {
+      "term": "G1 phase",
+      "link": "https://en.wikipedia.org/wiki/G1_phase"
+    },
+    {
+      "term": "S phase",
+      "link": "https://en.wikipedia.org/wiki/S_phase"
+    },
+    {
+      "term": "Genome",
+      "link": "https://en.wikipedia.org/wiki/Genome"
+    },
+    {
+      "term": "DNA replication",
+      "link": "https://en.wikipedia.org/wiki/DNA_replication"
+    },
+    {
+      "term": "Sister chromatids",
+      "link": "https://en.wikipedia.org/wiki/Sister_chromatids"
+    },
+    {
+      "term": "G2 phase",
+      "link": "https://en.wikipedia.org/wiki/G2_phase"
+    },
+    {
+      "term": "G0",
+      "link": "https://en.wikipedia.org/wiki/G0_phase"
+    },
+    {
+      "term": "Mitosis",
+      "link": "https://en.wikipedia.org/wiki/Mitosis"
+    },
+    {
+      "term": "Prophase",
+      "link": "https://en.wikipedia.org/wiki/Prophase"
+    },
+    {
+      "term": "Metaphase",
+      "link": "https://en.wikipedia.org/wiki/Metaphase"
+    },
+    {
+      "term": "Anaphase",
+      "link": "https://en.wikipedia.org/wiki/Anaphase"
+    },
+    {
+      "term": "Telophase",
+      "link": "https://en.wikipedia.org/wiki/Telophase"
+    },
+    {
+      "term": "Cytokinesis",
+      "link": "https://en.wikipedia.org/wiki/Cytokinesis"
+    },
+    {
+      "term": "Cleavage furrow",
+      "link": "https://en.wikipedia.org/wiki/Cleavage_furrow"
+    },
+    {
+      "term": "Cell plate",
+      "link": "https://en.wikipedia.org/wiki/Cell_plate"
+    },
+    {
+      "term": "Binary fission",
+      "link": "https://en.wikipedia.org/wiki/Fission_(biology)"
+    },
+    {
+      "term": "Somatic cells",
+      "link": "https://en.wikipedia.org/wiki/Somatic_cell"
+    },
+    {
+      "term": "Diploid",
+      "link": "https://en.wikipedia.org/wiki/Ploidy"
+    },
+    {
+      "term": "Gametes",
+      "link": "https://en.wikipedia.org/wiki/Gamete"
+    },
+    {
+      "term": "Haploid",
+      "link": "https://en.wikipedia.org/wiki/Ploidy"
+    }
+  ],
+  "links": [
+    {
+      "title": "Khan Academy | Phases of the cell cycle (article)",
+      "link": "https://www.khanacademy.org/science/ap-biology/cell-communication-and-cell-cycle/cell-cycle/a/cell-cycle-phases"
+    },
+    {
+      "title": "Khan Academy | Phases of mitosis (article)",
+      "link": "https://www.khanacademy.org/science/ap-biology/cell-communication-and-cell-cycle/cell-cycle/a/phases-of-mitosis"
+    },
+    {
+      "title": "Wikipedia | Cell cycle",
+      "link": "https://en.wikipedia.org/wiki/Cell_cycle"
+    },
+    {
+      "title": "Wikipedia | Mitosis",
+      "link": "https://en.wikipedia.org/wiki/Mitosis"
+    },
+    {
+      "title": "Biology Dictionary | Cell Cycle",
+      "link": "https://biologydictionary.net/ap-biology/4-6-cell-cycle/"
+    }
+  ],
+  "videos": [
+    {
+      "title": "AP Playground | Cell Cycle",
+      "link": "KYUfxOnhMs8",
+      "download": true,
+      "filename": "AP Playground Biology Lesson 4.5.pptx"
+    },
+    {
+      "title": "PoseKnows Biology | Cell Cycle",
+      "link": "A_bpsbqhyOQ"
+    },
+    {
+      "title": "Crash Course Biology | Mitosis & the Cell Cycle: How Cells Clone Themselves",
+      "link": "skPOXcVvS5c",
+      "more": true
+    },
+    {
+      "title": "Amoeba Sisters | The Cell Cycle (and cancer)",
+      "link": "QVCjdNxJreE",
+      "more": true
+    },
+    {
+      "title": "Amoeba Sisters | Mitosis: The Amazing Cell Process that Uses Division to Multiply!",
+      "link": "f-ldPgEfAHI"
+    },
+    {
+      "title": "Bozeman Science | Mitosis",
+      "link": "1cVZBV9tD-A",
+      "more": true
+    },
+    {
+      "title": "Bozeman Science | Phases of Mitosis",
+      "link": "mXVoTj06zwg",
+      "more": true
+    }
+  ]
+}

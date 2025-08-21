@@ -1,0 +1,110 @@
+{
+  "summary": "This lesson has to do with an essential component of life: water. Topic 1.1 covers the structure of water and the properties which make it such an important and life sustaining molecule. Although this topic isn't mentioned often by College Board it covers many essential concepts for the rest of the course. It is highly recommended that you go over chemistry fundamentals in Unit 0 before starting this lesson.",
+  "vocab": [
+    {
+      "term": "Electronegativity",
+      "link": "https://en.wikipedia.org/wiki/Electronegativity"
+    },
+    {
+      "term": "Polarity",
+      "link": "https://en.wikipedia.org/wiki/Chemical_polarity"
+    },
+    {
+      "term": "Hydrogen bonds",
+      "link": "https://en.wikipedia.org/wiki/Hydrogen_bond"
+    },
+    {
+      "term": "Cohesion",
+      "link": "https://en.wikipedia.org/wiki/Cohesion_(chemistry)"
+    },
+    {
+      "term": "Surface tension",
+      "link": "https://en.wikipedia.org/wiki/Surface_tension"
+    },
+    {
+      "term": "Adhesion",
+      "link": "https://en.wikipedia.org/wiki/Adhesion"
+    },
+    {
+      "term": "Meniscus",
+      "link": "https://en.wikipedia.org/wiki/Meniscus_(liquid)"
+    },
+    {
+      "term": "Capillary action",
+      "link": "https://en.wikipedia.org/wiki/Capillary_action"
+    },
+    {
+      "term": "Transpiration",
+      "link": "https://en.wikipedia.org/wiki/Transpiration"
+    },
+    {
+      "term": "High specific heat",
+      "link": "https://en.wikipedia.org/wiki/Properties_of_water#Heat_capacity_and_heats_of_vaporization_and_fusion"
+    },
+    {
+      "term": "High heat of vaporization",
+      "link": "https://en.wikipedia.org/wiki/Properties_of_water#Heat_capacity_and_heats_of_vaporization_and_fusion"
+    },
+    {
+      "term": "Solution",
+      "link": "https://en.wikipedia.org/wiki/Aqueous_solution"
+    },
+    {
+      "term": "Solvent",
+      "link": "https://en.wikipedia.org/wiki/Properties_of_water#Water_as_a_solvent"
+    },
+    {
+      "term": "Hydrophilic",
+      "link": "https://en.wikipedia.org/wiki/Hydrophile"
+    },
+    {
+      "term": "Hydrophobic",
+      "link": "https://en.wikipedia.org/wiki/Hydrophobe"
+    }
+  ],
+  "links": [
+    {
+      "title": "Khan Academy | Lesson summary: Water and life (article)",
+      "link": "https://www.khanacademy.org/science/ap-biology/chemistry-of-life/structure-of-water-and-hydrogen-bonding/a/hs-water-and-life-review"
+    },
+    {
+      "title": "Wikipedia | Properties of water",
+      "link": "https://en.wikipedia.org/wiki/Properties_of_water"
+    },
+    {
+      "title": "Biology Dictionary | Structure of Water and Hydrogen Bonding",
+      "link": "https://biologydictionary.net/ap-biology/1-1-structure-of-water-and-hydrogen-bonding/"
+    }
+  ],
+  "videos": [
+    {
+      "title": "AP Playground | Structure of Water and Hydrogen Bonding",
+      "link": "vr-K0hiFM30",
+      "download": true,
+      "filename": "AP Playground Biology Lesson 1.1.pptx"
+    },
+    {
+      "title": "PoseKnows Biology | Structure of Water and Hydrogen Bonding",
+      "link": "t21f03JfGPk"
+    },
+    {
+      "title": "Crash Course Biology | Water - Liquid Awesome",
+      "link": "HVT3Y3_gHGg"
+    },
+    {
+      "title": "Amoeba Sisters | Properties of Water",
+      "link": "3jwAGWky98c",
+      "more": true
+    },
+    {
+      "title": "Bozeman Science | Water: A Polar Molecule",
+      "link": "iOOvX0jmhJ4",
+      "more": true
+    },
+    {
+      "title": "Bozeman Science | Water and Life",
+      "link": "ZScEgE55XTM",
+      "more": true
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "summary": "All important biological molecules in your body are macromolecules. Topic 1.5 is about the structure and function of one of them: lipids. This lesson explains where lipids are found in biological organisms and how their chemical composition enables their function.",
+  "vocab": [
+    {
+      "term": "Lipids",
+      "link": "https://en.wikipedia.org/wiki/Lipid"
+    },
+    {
+      "term": "Triglycerides",
+      "link": "https://en.wikipedia.org/wiki/Triglyceride"
+    },
+    {
+      "term": "Fatty acid chain",
+      "link": "https://en.wikipedia.org/wiki/Fatty_acid"
+    },
+    {
+      "term": "Saturated fats",
+      "link": "https://en.wikipedia.org/wiki/Saturated_fat"
+    },
+    {
+      "term": "Unsaturated fats",
+      "link": "https://en.wikipedia.org/wiki/Unsaturated_fat"
+    },
+    {
+      "term": "Steroids",
+      "link": "https://en.wikipedia.org/wiki/Steroid"
+    },
+    {
+      "term": "Phospholipids",
+      "link": "https://en.wikipedia.org/wiki/Phospholipid"
+    },
+    {
+      "term": "Cholesterol",
+      "link": "https://en.wikipedia.org/wiki/Cholesterol"
+    }
+  ],
+  "links": [
+    {
+      "title": "Khan Academy | Molecular structure of triglycerides (video)",
+      "link": "https://www.khanacademy.org/science/ap-biology/chemistry-of-life/properties-structure-and-function-of-biological-macromolecules/v/molecular-structure-of-triglycerides-fats"
+    },
+    {
+      "title": "Khan Academy | Saturated fats, unsaturated fats, and trans fats (video)",
+      "link": "https://www.khanacademy.org/science/ap-biology/chemistry-of-life/properties-structure-and-function-of-biological-macromolecules/v/saturated-fats-unsaturated-fats-and-trans-fats"
+    },
+    {
+      "title": "Wikipedia | Lipid",
+      "link": "https://en.wikipedia.org/wiki/Lipid"
+    },
+    {
+      "title": "Biology Dictionary | Properties of Biological Macromolecules",
+      "link": "https://biologydictionary.net/ap-biology/1-4-properties-of-biological-macromolecules/"
+    },
+    {
+      "title": "Biology Dictionary | Structure and Function of Biological Macromolecules",
+      "link": "https://biologydictionary.net/ap-biology/1-5-structure-and-function-of-biological-macromolecules/"
+    }
+  ],
+  "videos": [
+    {
+      "title": "AP Playground | Lipids",
+      "link": "8aPBjBN9CB4",
+      "download": true,
+      "filename": "AP Playground Biology Lesson 1.5.pptx"
+    },
+    {
+      "title": "PoseKnows Biology | Lipids",
+      "link": "3bMorlrsKmY"
+    },
+    {
+      "title": "Crash Course Biology | Biological Molecules - You Are What You Eat",
+      "link": "H8WJ2KENlK0",
+      "more": true
+    },
+    {
+      "title": "Amoeba Sisters | Biomolecules",
+      "link": "1Dx7LDwINLU",
+      "more": true
+    },
+    {
+      "title": "Bozeman Science | Lipids",
+      "link": "VGHD9e3yRIU"
+    }
+  ]
+}

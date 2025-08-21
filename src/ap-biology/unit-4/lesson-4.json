@@ -1,0 +1,64 @@
+{
+  "summary": "In topic 4.3, we explored the factors that activate or inhibit signal transduction pathways. Topic 4.4 explains how cells use signal boosting or inhibition to accomplish their specific functions.",
+  "vocab": [
+    {
+      "term": "Homeostasis",
+      "link": "https://en.wikipedia.org/wiki/Homeostasis"
+    },
+    {
+      "term": "Negative feedback",
+      "link": "https://en.wikipedia.org/wiki/Negative_feedback"
+    },
+    {
+      "term": "Insulin",
+      "link": "https://en.wikipedia.org/wiki/Insulin"
+    },
+    {
+      "term": "Glucagon",
+      "link": "https://en.wikipedia.org/wiki/Glucagon"
+    },
+    {
+      "term": "Diabetes",
+      "link": "https://en.wikipedia.org/wiki/Diabetes"
+    },
+    {
+      "term": "Positive feedback",
+      "link": "https://en.wikipedia.org/wiki/Positive_feedback"
+    }
+  ],
+  "links": [
+    {
+      "title": "Khan Academy | Homeostasis (article)",
+      "link": "https://www.khanacademy.org/science/ap-biology/cell-communication-and-cell-cycle/feedback/a/homeostasis"
+    },
+    {
+      "title": "Wikipedia | Homeostasis",
+      "link": "https://en.wikipedia.org/wiki/Homeostasis"
+    },
+    {
+      "title": "Biology Dictionary | Feedback",
+      "link": "https://biologydictionary.net/ap-biology/4-5-feedback/"
+    }
+  ],
+  "videos": [
+    {
+      "title": "AP Playground | Feedback",
+      "link": "DCaz1A9_rVc",
+      "download": true,
+      "filename": "AP Playground Biology Lesson 4.4.pptx"
+    },
+    {
+      "title": "PoseKnows Biology | Feedback",
+      "link": "R_K1AcAHdd4"
+    },
+    {
+      "title": "Amoeba Sisters | Homeostasis and Negative/Positive Feedback",
+      "link": "Iz0Q9nTZCw4",
+      "more": true
+    },
+    {
+      "title": "Bozeman Science | Positive and Negative Feedback Loops",
+      "link": "CLv3SkF_Eag"
+    }
+  ]
+}

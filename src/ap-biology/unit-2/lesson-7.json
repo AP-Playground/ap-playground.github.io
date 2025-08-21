@@ -1,0 +1,122 @@
+{
+  "summary": "Cells are complex organisms. They have tons of small components within them, which each serve different and interconnected purposes. However, each of these components (and the cell as a whole) operate best in slightly different conditions. Topic 2.7 is about the effects of having different environmental conditions inside and outside the cell.",
+  "vocab": [
+    {
+      "term": "Osmosis",
+      "link": "https://en.wikipedia.org/wiki/Osmosis"
+    },
+    {
+      "term": "Tonicity",
+      "link": "https://en.wikipedia.org/wiki/Tonicity"
+    },
+    {
+      "term": "Isotonic",
+      "link": "https://en.wikipedia.org/wiki/Tonicity#Isotonicity"
+    },
+    {
+      "term": "Normal Cell",
+      "link": "https://en.wikipedia.org/wiki/Tonicity"
+    },
+    {
+      "term": "Flaccid Cell",
+      "link": "https://en.wikipedia.org/wiki/File:Turgor_pressure_on_plant_cells_diagram.svg"
+    },
+    {
+      "term": "Hypertonic",
+      "link": "https://en.wikipedia.org/wiki/Tonicity#Hypertonic_solution"
+    },
+    {
+      "term": "Shriveled Cell",
+      "link": "https://en.wikipedia.org/wiki/Tonicity"
+    },
+    {
+      "term": "Plasmolyzed Cell",
+      "link": "https://en.wikipedia.org/wiki/File:Turgor_pressure_on_plant_cells_diagram.svg"
+    },
+    {
+      "term": "Hypotonic",
+      "link": "https://en.wikipedia.org/wiki/Tonicity#Hypotonic_solution"
+    },
+    {
+      "term": "Lysed Cell",
+      "link": "https://en.wikipedia.org/wiki/Tonicity"
+    },
+    {
+      "term": "Turgid Cell",
+      "link": "https://en.wikipedia.org/wiki/File:Turgor_pressure_on_plant_cells_diagram.svg"
+    },
+    {
+      "term": "Water potential",
+      "link": "https://en.wikipedia.org/wiki/Water_potential"
+    },
+    {
+      "term": "Solute potential",
+      "link": "https://en.wikipedia.org/wiki/Osmotic_pressure"
+    },
+    {
+      "term": "Contractile vacuoles",
+      "link": "https://en.wikipedia.org/wiki/Contractile_vacuole"
+    },
+    {
+      "term": "Aquaporins",
+      "link": "https://en.wikipedia.org/wiki/Aquaporin"
+    }
+  ],
+  "links": [
+    {
+      "title": "Khan Academy | Osmosis and tonicity (article)",
+      "link": "https://www.khanacademy.org/science/ap-biology/cell-structure-and-function/mechanisms-of-transport-tonicity-and-osmoregulation/a/osmosis"
+    },
+    {
+      "title": "Wikipedia | Osmosis",
+      "link": "https://en.wikipedia.org/wiki/Osmosis"
+    },
+    {
+      "title": "Wikipedia | Contractile vacuole",
+      "link": "https://en.wikipedia.org/wiki/Contractile_vacuole"
+    },
+    {
+      "title": "Wikipedia | Aquaporin",
+      "link": "https://en.wikipedia.org/wiki/Aquaporin"
+    },
+    {
+      "title": "Biology Dictionary | Tonicity and Osmoregulation",
+      "link": "https://biologydictionary.net/ap-biology/2-8-facilitated-diffusion/"
+    }
+  ],
+  "videos": [
+    {
+      "title": "AP Playground | Tonicity and Osmoregulation",
+      "link": "0isqo7N4eZg",
+      "download": true,
+      "filename": "AP Playground Biology Lesson 2.7.pptx"
+    },
+    {
+      "title": "PoseKnows Biology | Tonicity and Osmoregulation (Part I)",
+      "link": "de27hr0Er_E"
+    },
+    {
+      "title": "PoseKnows Biology | Tonicity and Osmoregulation (Part II: Water Potential)",
+      "link": "3K_ydf2zMng"
+    },
+    {
+      "title": "Crash Course Biology | In Da Club - Membranes & Transport",
+      "link": "dPKvHrD1eS4",
+      "more": true
+    },
+    {
+      "title": "Amoeba Sisters | Osmosis and Water Potential",
+      "link": "L-osEc07vMs"
+    },
+    {
+      "title": "Bozeman Science | Osmosis Demo",
+      "link": "eQsAzXr0UCU",
+      "more": true
+    },
+    {
+      "title": "Bozeman Science | Water Potential",
+      "link": "nDZud2g1RVY",
+      "more": true
+    }
+  ]
+}

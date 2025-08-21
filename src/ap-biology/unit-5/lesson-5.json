@@ -1,0 +1,47 @@
+{
+  "summary": "In the previous topics, we gained a good understanding of heredity and inheritance, and how these various genetic patterns and laws contributed to the outward appearance of organisms. In Topic 5.5, we will explore how not only genetics, but also the environment, can affect phenotype.",
+  "vocab": [
+    {
+      "term": "Polygenic inheritance",
+      "link": "https://en.wikipedia.org/wiki/Polygene"
+    },
+    {
+      "term": "Phenotypic plasticity",
+      "link": "https://en.wikipedia.org/wiki/Phenotypic_plasticity"
+    }
+  ],
+  "links": [
+    {
+      "title": "Khan Academy | Polygenic inheritance and environmental effects (article)",
+      "link": "https://www.khanacademy.org/science/ap-biology/heredity/environmental-effects-on-phenotype/a/polygenic-inheritance-and-environmental-effects"
+    },
+    {
+      "title": "Wikipedia | Phenotypic plasticity",
+      "link": "https://en.wikipedia.org/wiki/Phenotypic_plasticity"
+    },
+    {
+      "title": "Wikipedia | Epigenetics",
+      "link": "https://en.wikipedia.org/wiki/Epigenetics"
+    },
+    {
+      "title": "Biology Dictionary | Environmental Effects on Phenotype",
+      "link": "https://biologydictionary.net/ap-biology/5-5-environmental-effects-on-phenotype/"
+    }
+  ],
+  "videos": [
+    {
+      "title": "AP Playground | Environmental Effects on Phenotype",
+      "link": "3q-rjewNWiU",
+      "download": true,
+      "filename": "AP Playground Biology Lesson 5.5.pptx"
+    },
+    {
+      "title": "PoseKnows Biology | Environmental Effects on Phenotype",
+      "link": "0vrYTugETXI"
+    },
+    {
+      "title": "Amoeba Sisters | Epigenetics",
+      "link": "MD3Fc0XOjWk"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "summary": "Unit 4 discussed cell replication and division through the process of mitosis, the creation of genetically identical cells. Topic 5.1 starts Unit 5 with a discussion of the process organisms use to reproduce sexually and maintain genetic diversity within their populations: meiosis.",
+  "vocab": [
+    {
+      "term": "Genes",
+      "link": "https://en.wikipedia.org/wiki/Gene"
+    },
+    {
+      "term": "Asexual Reproduction",
+      "link": "https://en.wikipedia.org/wiki/Asexual_reproduction"
+    },
+    {
+      "term": "Sexual Reproduction",
+      "link": "https://en.wikipedia.org/wiki/Sexual_reproduction"
+    },
+    {
+      "term": "Homologous chromosomes",
+      "link": "https://en.wikipedia.org/wiki/Homologous_chromosome"
+    },
+    {
+      "term": "Autosomes",
+      "link": "https://en.wikipedia.org/wiki/Autosome"
+    },
+    {
+      "term": "Sex chromosomes",
+      "link": "https://en.wikipedia.org/wiki/Sex_chromosome"
+    },
+    {
+      "term": "Somatic cells",
+      "link": "https://en.wikipedia.org/wiki/Somatic_cell"
+    },
+    {
+      "term": "Gametes",
+      "link": "https://en.wikipedia.org/wiki/Gamete"
+    },
+    {
+      "term": "Diploid Cell",
+      "link": "https://en.wikipedia.org/wiki/Ploidy#Diploid"
+    },
+    {
+      "term": "Haploid Cell",
+      "link": "https://en.wikipedia.org/wiki/Ploidy#Haploid_and_monoploid"
+    },
+    {
+      "term": "Meiosis",
+      "link": "https://en.wikipedia.org/wiki/Meiosis"
+    },
+    {
+      "term": "Fertilization",
+      "link": "https://en.wikipedia.org/wiki/Fertilisation"
+    },
+    {
+      "term": "Synapsis",
+      "link": "https://en.wikipedia.org/wiki/Synapsis"
+    },
+    {
+      "term": "Crossing over",
+      "link": "https://en.wikipedia.org/wiki/Chromosomal_crossover"
+    },
+    {
+      "term": "Independent assortment",
+      "link": "https://en.wikipedia.org/wiki/Mendelian_inheritance#Law_of_independent_assortment"
+    },
+    {
+      "term": "Random fertilization",
+      "link": "https://en.wikipedia.org/wiki/Quantitative_genetics#Random_fertilization"
+    },
+    {
+      "term": "Mitosis",
+      "link": "https://en.wikipedia.org/wiki/Mitosis"
+    }
+  ],
+  "links": [
+    {
+      "title": "Khan Academy | Meiosis (article)",
+      "link": "https://www.khanacademy.org/science/ap-biology/heredity/meiosis-and-genetic-diversity/a/phases-of-meiosis"
+    },
+    {
+      "title": "Khan Academy | Comparing mitosis and meiosis (video)",
+      "link": "https://www.khanacademy.org/science/ap-biology/heredity/meiosis-and-genetic-diversity/v/comparing-mitosis-and-meiosis"
+    },
+    {
+      "title": "Wikipedia | Meiosis",
+      "link": "https://en.wikipedia.org/wiki/Meiosis"
+    },
+    {
+      "title": "Biology Dictionary | Meiosis",
+      "link": "https://biologydictionary.net/ap-biology/5-1-meiosis/"
+    }
+  ],
+  "videos": [
+    {
+      "title": "AP Playground | Meiosis",
+      "link": "uI4hOznOVy4",
+      "download": true,
+      "filename": "AP Playground Biology Lesson 5.1.pptx"
+    },
+    {
+      "title": "PoseKnows Biology | Meiosis",
+      "link": "ESi4hH0rA5E"
+    },
+    {
+      "title": "Crash Course Biology | Meiosis: Why Are All Humans Unique?",
+      "link": "pj1oFx42d48",
+      "more": true
+    },
+    {
+      "title": "Amoeba Sisters | Meiosis",
+      "link": "VzDMG7ke69g"
+    },
+    {
+      "title": "Amoeba Sisters | Mitosis vs. Meiosis: Side by Side Comparison",
+      "link": "zrKdz93WlVk",
+      "more": true
+    },
+    {
+      "title": "Amoeba Sisters | Chromosome Numbers During Division: Demystified!",
+      "link": "gcz1FOWw0Cg"
+    },
+    {
+      "title": "Bozeman Science | Phases of Meiosis",
+      "link": "16enC385R0w",
+      "more": true
+    }
+  ]
+}

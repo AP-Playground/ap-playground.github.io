@@ -1,0 +1,106 @@
+{
+  "summary": "All important biological molecules in your body are macromolecules. These include carbohydrates, proteins, nucleic acids, and lipids. There are two kinds of nucleic acids: DNA and RNA. Topic 1.6 looks at the key differences between the structure and function of these two nucleic acids.",
+  "vocab": [
+    {
+      "term": "Nucleic Acids",
+      "link": "https://en.wikipedia.org/wiki/Nucleic_acid"
+    },
+    {
+      "term": "Deoxyribonucleic acid (DNA)",
+      "link": "https://en.wikipedia.org/wiki/DNA"
+    },
+    {
+      "term": "Antiparallel",
+      "link": "https://en.wikipedia.org/wiki/Antiparallel_(biochemistry)"
+    },
+    {
+      "term": "Ribonucleic acid (RNA)",
+      "link": "https://en.wikipedia.org/wiki/RNA"
+    },
+    {
+      "term": "Nucleotides",
+      "link": "https://en.wikipedia.org/wiki/Nucleotide"
+    },
+    {
+      "term": "Nitrogenous base",
+      "link": "https://en.wikipedia.org/wiki/Nucleotide_base"
+    },
+    {
+      "term": "Adenine",
+      "link": "https://en.wikipedia.org/wiki/Adenine"
+    },
+    {
+      "term": "Thymine",
+      "link": "https://en.wikipedia.org/wiki/Thymine"
+    },
+    {
+      "term": "Guanine",
+      "link": "https://en.wikipedia.org/wiki/Guanine"
+    },
+    {
+      "term": "Cytosine",
+      "link": "https://en.wikipedia.org/wiki/Cytosine"
+    },
+    {
+      "term": "Uracil",
+      "link": "https://en.wikipedia.org/wiki/Uracil"
+    },
+    {
+      "term": "Ribose",
+      "link": "https://en.wikipedia.org/wiki/Ribose"
+    },
+    {
+      "term": "Deoxyribose",
+      "link": "https://en.wikipedia.org/wiki/Deoxyribose"
+    }
+  ],
+  "links": [
+    {
+      "title": "Khan Academy | Molecular structure of DNA (video)",
+      "link": "https://www.khanacademy.org/science/ap-biology/chemistry-of-life/nucleic-acids-ap/v/molecular-structure-of-dna"
+    },
+    {
+      "title": "Khan Academy | Molecular structure of RNA (video)",
+      "link": "https://www.khanacademy.org/science/ap-biology/chemistry-of-life/nucleic-acids-ap/v/molecular-structure-of-rna"
+    },
+    {
+      "title": "Wikipedia | Nucleic acid",
+      "link": "https://en.wikipedia.org/wiki/Nucleic_acid"
+    },
+    {
+      "title": "Biology Dictionary | Nucleic Acids",
+      "link": "https://biologydictionary.net/ap-biology/1-6-nucleic-acids/"
+    }
+  ],
+  "videos": [
+    {
+      "title": "AP Playground | Nucleic Acids",
+      "link": "DSaXAyyiDb8",
+      "download": true,
+      "filename": "AP Playground Biology Lesson 1.6.pptx"
+    },
+    {
+      "title": "PoseKnows Biology | Nucleic Acids",
+      "link": "7T5BT_8lOIU"
+    },
+    {
+      "title": "Crash Course Biology | Biological Molecules - You Are What You Eat",
+      "link": "H8WJ2KENlK0",
+      "more": true
+    },
+    {
+      "title": "Amoeba Sisters | DNA vs RNA",
+      "link": "JQByjprj_mA",
+      "more": true
+    },
+    {
+      "title": "Bozeman Science | Nucleic Acids",
+      "link": "NNASRkIU5Fw"
+    },
+    {
+      "title": "Bozeman Science | DNA and RNA - Part 1",
+      "link": "qoERVSWKmGk",
+      "more": true
+    }
+  ]
+}
