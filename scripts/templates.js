@@ -21,15 +21,15 @@ export function head(title, description = "", stylesheets = [], scripts = []) {
   head += `<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="preload stylesheet" as="style">`
   head += `<link href="/css/general.css" rel="stylesheet">`
   head += stylesheets.map(css => `<link href="${css}" rel="stylesheet">`).join("")
-  head += `<script src="/js/setup.js"></script>`
-  head += scripts.map(js => `<script src="${js}"></script>`).join("")
+  head += `<script src="/js/setup.js" defer></script>`
+  head += scripts.map(js => `<script src="${js}" defer></script>`).join("")
   head += `</head>`
   return head;
 }
 
 export function block(title, content, intro = false, classes = []) {
   classes = classes.map(i => ` ${i}`).join('')
-  if (content[0] !== "<") content = `<p>${content}</p>`
+  if (content && content[0] !== "<") content = `<p>${content}</p>`
   if (intro) {
     if (title[0] !== "<") title = `<h1>${title}</h1>`
     return `<section class="content-block intro-block${classes}">${title}${content}</section>`
@@ -99,7 +99,7 @@ export function nav(path) {
         if (pathSegments[1]===unitSlug) {
           for (const [lessonSlug, lesson] of Object.entries(navData.data[unitSlug].data)) {
             const lessonLink = "/"+navData.slug+"/"+unitSlug+"/"+lessonSlug
-            tabContent.push(`<li class="sub-item"><a href="${lessonLink}"${path === lessonLink ? " aria-current='page'" : ""}>${lesson.prefix + ": " + lesson.title}</a></li>`)
+            tabContent.push(`<li class="sub-item"><a href="${lessonLink}"${pathSegments[2] === lessonSlug ? " aria-current='page'" : ""}>${lesson.prefix + ": " + lesson.title}</a></li>`)
           }
         }
       }
@@ -145,31 +145,24 @@ export function header(path) {
 
   let temp = `<div class="page-header">`
 
-  let breadcrumb = [["Home","/"]]
+  const breadcrumb = []
 
   switch (pathSegments[0]) {
-    case "": {
-      breadcrumb = []
-      break;
-    }
+    case "": break;
+    case "404": break;
     case "about": {
-      breadcrumb.push(["About","/about"])
+      breadcrumb.push(["Home","/"],["About","/about"])
       break;
     }
     case "courses": {
-      breadcrumb.push(["Courses","/courses"])
+      breadcrumb.push(["Home","/"],["Courses","/courses"])
       break;
     }
     case "games": {
-      breadcrumb.push(["Games","/games"])
-      break;
-    }
-    case "404": {
-      breadcrumb = []
+      breadcrumb.push(["Home","/"],["Games","/games"])
       break;
     }
     default: {
-      breadcrumb.push(["Courses","/courses"])
       navData = JSON.parse(readFileSync(`src/nav/${pathSegments[0]}.json`))
 
       breadcrumb.push([navData.title,"/" + pathSegments[0]])
@@ -177,10 +170,17 @@ export function header(path) {
       if (pathSegments.length > 1) {
         const unit = navData.data[pathSegments[1]]
         breadcrumb.push([unit.prefix+": "+unit.title, `/${pathSegments[0]}/${pathSegments[1]}`])
-      }
-      if (pathSegments.length > 2) {
-        const lesson = navData.data[pathSegments[1]].data[pathSegments[2]]
-        breadcrumb.push([lesson.prefix+": "+lesson.title, `/${pathSegments[0]}/${pathSegments[1]}/${pathSegments[2]}`])
+
+        if (pathSegments.length > 2) {
+          const lesson = unit.data[pathSegments[2]]
+          breadcrumb.push([lesson.prefix+": "+lesson.title, `/${pathSegments[0]}/${pathSegments[1]}/${pathSegments[2]}`])
+
+          if (pathSegments.length > 3) {
+            breadcrumb.push(["Vocabulary", `/${pathSegments[0]}/${pathSegments[1]}/${pathSegments[2]}/${pathSegments[3]}`])
+          }
+        }
+      } else {
+        breadcrumb.unshift(["Home","/"], ["Courses","/courses"])
       }
     }
   }
@@ -202,43 +202,29 @@ export function header(path) {
       let nextLink;
       let prevLink;
 
-      const units = Object.entries(navData.data)
-
-      if (pathSegments.length === 1) {
-        nextLink = "/" + pathSegments[0] + "/" + units[0][0]
-        
-      } else if (pathSegments.length === 2) {
-        const curUnit = units.findIndex(([unitSlug, unit]) => unitSlug === pathSegments[1])
-        if (curUnit === 0) {
-          prevLink = "/" + pathSegments[0]
-        } else if (units[curUnit - 1][1].hasOwnProperty("data")) {
-          const lessons = Object.entries(units[curUnit - 1][1].data)
-          prevLink = "/" + pathSegments[0] + "/" + units[curUnit - 1][0] + "/" + lessons[lessons.length - 1][0]
-        } else {
-          prevLink = "/" + pathSegments[0] + "/" + units[curUnit - 1][0]
-        }
-        if (units[curUnit][1].hasOwnProperty("data")) {
-          const lessons = Object.entries(units[curUnit][1].data)
-          nextLink = "/" + pathSegments[0] + "/" + units[curUnit][0] + "/" + lessons[0][0]
-        } else if (curUnit !== units.length - 1) {
-          nextLink = "/" + pathSegments[0] + "/" + units[curUnit + 1][0]
-        }
-
-      } else if (pathSegments.length === 3) {
-        const curUnit = units.findIndex(([unitSlug, unit]) => unitSlug === pathSegments[1])
-        const lessons = Object.entries(units[curUnit][1].data)
+      if (pathSegments.length === 3) {
+        const unit = navData.data[pathSegments[1]].data
+        const lessons = Object.entries(unit)
         const curLesson = lessons.findIndex(([lessonSlug, lesson]) => lessonSlug === pathSegments[2])
 
-        if (curLesson === 0) {
-          prevLink = "/" + pathSegments[0] + "/" + units[curUnit][0];
-        } else {
-          prevLink = "/" + pathSegments[0] + "/" + units[curUnit][0] + "/" + lessons[curLesson - 1][0]
+        if (curLesson !== 0) {
+          prevLink = "/" + pathSegments[0] + "/" + pathSegments[1] + "/" + lessons[curLesson - 1][0]
         }
 
         if (curLesson !== lessons.length - 1) {
-          nextLink = "/" + pathSegments[0] + "/" + units[curUnit][0] + "/" + lessons[curLesson + 1][0]
-        } else if (curUnit !== units.length - 1) {
-          nextLink = "/" + pathSegments[0] + "/" + units[curUnit + 1][0]
+          nextLink = "/" + pathSegments[0] + "/" + pathSegments[1] + "/" + lessons[curLesson + 1][0]
+        }
+      } else if (pathSegments.length === 4) {
+        const unit = navData.data[pathSegments[1]].data
+        const lessons = Object.entries(unit)
+        const curLesson = lessons.findIndex(([lessonSlug, lesson]) => lessonSlug === pathSegments[2])
+
+        if (curLesson !== 0) {
+          prevLink = "/" + pathSegments[0] + "/" + pathSegments[1] + "/" + lessons[curLesson - 1][0] + "/vocab"
+        }
+
+        if (curLesson !== lessons.length - 1) {
+          nextLink = "/" + pathSegments[0] + "/" + pathSegments[1] + "/" + lessons[curLesson + 1][0] + "/vocab"
         }
       }
 
@@ -284,4 +270,17 @@ function videoEmbed(link) {
 
 function moreVideoEmbed(link) {
   return `<iframe class="video-embed unloaded" data-src="https://www.youtube-nocookie.com/embed/${link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+}
+
+export function splitHeader(title, link, linkText = "More &rightarrow;", intro = false) {
+  let temp = "<h2>" + title + "</h2>"
+  if (intro) {
+    temp = "<h1>" + title + "</h1>"
+  }
+  temp += `<a href="${link}">${linkText}</a>`
+  return `<div class="split-header">${temp}</div>`
+}
+
+export function imgEnlargedContainer() {
+  return `<div class="img-enlarged-container"><img></div>`
 }
