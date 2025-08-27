@@ -1,6 +1,3 @@
-## This is the main repository for the site hosted at [applayground.org](https://applayground.org)
+## This is a temporary repository for the site hosted at [ap-playground.github.io](https://ap-playground.github.io)
 
-To submit feedback, or ask for permission to contribute, please use the information on the about page of the website ([applayground.org/about](https://applayground.org/about))
-
-A temporary clone of this website is published at [ap-playground.github.io](https://ap-playground.github.io) for users who cannot access the main link.
-
+The official website can be found at [applayground.org](https://applayground.org), and the official repo can is called AP-Playground
