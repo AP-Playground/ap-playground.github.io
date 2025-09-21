@@ -36,7 +36,8 @@ examDatesTemp.forEach(el1 => {
 
 // set up global courses data
 export const courses = [
-  { title: "AP Biology", slug: "ap-biology" }
+  { title: "AP Biology", slug: "ap-biology" },
+  { title: "AP Art History", slug: "ap-art-history" }
 ]
 
 const courseTitles = {}
@@ -47,7 +48,6 @@ export function courseTitle(slug) {
   return courseTitles[slug]
 }
 
-
 export const navCourses = courses.map(({title, slug}) => `<li class="item"><a href="/${slug}">${title}</a></li>`).join("")
 
 const cedLinks = {}
@@ -57,6 +57,19 @@ for (const {title, slug} of courses) {
 
 export function ced(course) {
   return cedLinks[course]
+}
+
+// set up global tools data
+export const tools = [
+  { title: "Youtube Player", slug: "yt-player" }
+]
+
+const toolTitles = {}
+for (const {title, slug} of tools) {
+  toolTitles[slug] = title
+}
+export function toolTitle(slug) {
+  return toolTitles[slug];
 }
 
 

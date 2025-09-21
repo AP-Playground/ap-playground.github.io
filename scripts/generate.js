@@ -6,6 +6,7 @@ import * as about from './unique/about.js'
 import * as courses from './unique/courses.js'
 import * as home from './unique/home.js'
 import * as page404 from './unique/404.js'
+import * as tools from './tools/home.js'
 
 
 // proccess global data
@@ -16,6 +17,7 @@ global.init();
 about.upload()
 courses.upload()
 home.upload()
+tools.upload()
 page404.upload()
 
 
@@ -55,5 +57,23 @@ const slidesDir = resolve("src/slides")
 util.getAllFiles(slidesDir).forEach(slide => {
   const srcPath = join(slidesDir, slide)
   const destPath = join("slides", slide);
+  util.copyFile(srcPath, destPath)
+})
+
+
+// copy images from src/images to public/images
+const imagesDir = resolve("src/images")
+util.getAllFiles(imagesDir).forEach(image => {
+  const srcPath = join(imagesDir, image)
+  const destPath = join("images", image);
+  util.copyFile(srcPath, destPath)
+})
+
+
+// copy resources from src/resources to public/resources
+const resourcesDir = resolve("src/resources")
+util.getAllFiles(resourcesDir).forEach(resource => {
+  const srcPath = join(resourcesDir, resource)
+  const destPath = join("resources", resource);
   util.copyFile(srcPath, destPath)
 })

@@ -2,8 +2,11 @@ import * as global from "./global.js"
 import { readFileSync } from "fs";
 
 function breadcrumbs(...links) {
-  let breadcrumbs = `<nav aria-label="Breadcrumb" class="breadcrumbs"><ol>`;
-  let length = links.length
+  let length = links.length;
+  if (!length) return "<div></div>";
+  let breadcrumbs = `<nav aria-label="Breadcrumb" class="breadcrumbs">`;
+  breadcrumbs += `<div class="breadcrumb-measure"></div><ol>`
+  breadcrumbs += `<button class="collapsed">&hellip;</button>`;
   breadcrumbs += links.map(([title, link], idx) => {
     return `<li><a href="${link}"${idx === length - 1 ? 'aria-current="page"' : ""}>${title}</a></li>`
   }).join("")
@@ -31,10 +34,10 @@ export function block(title, content, intro = false, classes = []) {
   classes = classes.map(i => ` ${i}`).join('')
   if (content && content[0] !== "<") content = `<p>${content}</p>`
   if (intro) {
-    if (title[0] !== "<") title = `<h1>${title}</h1>`
+    if (title && title[0] !== "<") title = `<h1>${title}</h1>`
     return `<section class="content-block intro-block${classes}">${title}${content}</section>`
   } else {
-    if (title[0] !== "<") title = `<h2>${title}</h2>`
+    if (title && title[0] !== "<") title = `<h2>${title}</h2>`
     return `<section class="content-block${classes}">${title}${content}</section>`
   }
 }
@@ -72,6 +75,9 @@ export function nav(path) {
   side += navTab(path, "Courses", "/courses", global.navCourses, transitionDuration(global.courses.length))
   side += navTab(path, "Games", "/games", 'Games are not supported at this time', transitionDuration(1))
 
+  const navTools = global.tools.map(({title, slug}) => `<li class="item"><a href="/tools/${slug}" ${path === "/tools/" + slug ? " aria-current='page'" : ""}>${title}</a></li>`).join("")
+  side += navTab(path, "Tools", "/tools", navTools, transitionDuration(global.tools.length))
+
   side += `<hr class="side-nav-divider">`
 
   const pathSegments = path.split("/")
@@ -80,14 +86,9 @@ export function nav(path) {
     case "":
     case "about":
     case "404":
-    case "courses": {
-      side += `<img src="/icons/favicon.svg" class="side-nav-back-img">`
-      break;
-    }
+    case "courses":
+    case "tools":
     case "games": {
-      if (pathSegments.length === 1) {
-        side += `<img src="/icons/favicon.svg" class="side-nav-back-img">`
-      }
       break;
     }
     default: {
@@ -96,7 +97,7 @@ export function nav(path) {
       for (const [unitSlug, unit] of Object.entries(navData.data)) {
         const unitLink = "/" + navData.slug + "/" + unitSlug
         tabContent.push(`<li class="item"><a href="${unitLink}"${path === unitLink ? " aria-current='page'" : ""}>${unit.prefix + ": " + unit.title}</a></li>`)
-        if (pathSegments[1]===unitSlug) {
+        if (pathSegments[1]===unitSlug && navData.data[unitSlug].hasOwnProperty("data")) {
           for (const [lessonSlug, lesson] of Object.entries(navData.data[unitSlug].data)) {
             const lessonLink = "/"+navData.slug+"/"+unitSlug+"/"+lessonSlug
             tabContent.push(`<li class="sub-item"><a href="${lessonLink}"${pathSegments[2] === lessonSlug ? " aria-current='page'" : ""}>${lesson.prefix + ": " + lesson.title}</a></li>`)
@@ -104,9 +105,10 @@ export function nav(path) {
         }
       }
       side += navTab(path, navData.title, `/${navData.slug}`, tabContent.join(""), transitionDuration(tabContent.length))
-
     }
   }
+  
+  side += `<img src="/icons/favicon.svg" class="side-nav-back-img">`
 
   side += `</nav></div>`
   side += `</div>`
@@ -160,6 +162,13 @@ export function header(path) {
     }
     case "games": {
       breadcrumb.push(["Home","/"],["Games","/games"])
+      break;
+    }
+    case "tools": {
+      breadcrumb.push(["Home","/"],["Tools","/tools"])
+      if (pathSegments.length > 1) {
+        breadcrumb.push([global.toolTitle(pathSegments[1]),`/${pathSegments[1]}`])
+      }
       break;
     }
     default: {
@@ -258,13 +267,13 @@ export function video({title, link, more = false, download = false, filename = f
     if (filename) {
       filename = `="${filename}"`
     }
-    return `<div class="video-container"><div class="video-header split-header"><h3>${title}</h3><div class="video-header-btns"><a class="download" aria-label="Download the presentation" download${filename} href="${download}"></a><a class="external-open" target="_blank" aria-label="Open video in new tab" href="https://www.youtube.com/watch?v=${link}"></a></div></div>${more ? moreVideoEmbed(link) : videoEmbed(link)}</div>`
+    return `<div class="video-container"><div class="video-header split-header"><h3>${title}</h3><div class="video-header-btns"><a class="mask download" aria-label="Download the presentation" download${filename} href="${download}"><div></div></a><a class="mask external-open" target="_blank" aria-label="Open video in new tab" href="https://www.youtube.com/watch?v=${link}"><div></div></a></div></div>${more ? moreVideoEmbed(link) : videoEmbed(link)}</div>`
   } else {
-    return `<div class="video-container"><div class="video-header split-header"><h3>${title}</h3><div class="video-header-btns"><a class="external-open" aria-label="Open video in new tab" target="_blank" href="https://www.youtube.com/watch?v=${link}"></a></div></div>${more ? moreVideoEmbed(link) : videoEmbed(link)}</div>`
+    return `<div class="video-container"><div class="video-header split-header"><h3>${title}</h3><div class="video-header-btns"><a class="mask external-open" aria-label="Open video in new tab" target="_blank" href="https://www.youtube.com/watch?v=${link}"><div></div></a></div></div>${more ? moreVideoEmbed(link) : videoEmbed(link)}</div>`
   }
 }
 
-function videoEmbed(link) {
+export function videoEmbed(link) {
   return `<iframe class="video-embed" src="https://www.youtube-nocookie.com/embed/${link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
 }
 
@@ -282,5 +291,5 @@ export function splitHeader(title, link, linkText = "More &rightarrow;", intro =
 }
 
 export function imgEnlargedContainer() {
-  return `<div class="img-enlarged-container"><img></div>`
+  return `<div class="img-enlarged-container"><img tabindex="-1"></div>`
 }
