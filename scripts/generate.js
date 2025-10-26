@@ -77,3 +77,7 @@ util.getAllFiles(resourcesDir).forEach(resource => {
   const destPath = join("resources", resource);
   util.copyFile(srcPath, destPath)
 })
+
+
+// indexing page for old url
+util.copyFile(resolve("google40156cb497ef1d05.html"), "google40156cb497ef1d05.html")
